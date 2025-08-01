@@ -1,97 +1,32 @@
 ---
-title: "Introduction"
-description: "Welcome to the new home for your documentation"
+title: "Catalog"
+description: "Welcome to Catalog - Wallet as a Service for modern applications"
 ---
 
-## Setting up
+Catalog builds authentication and wallet infrastructure to enable better products built on crypto rails. Get started in minutes to onboard users with wallets, spin up self-custodial wallets for users, and securely sign transactions through your app.
 
-Get your documentation site up and running in minutes.
+Broadly, Catalog enables:
 
-<Card
-  title="Start here"
-  icon="rocket"
-  href="/quickstart"
-  horizontal
->
-  Follow our three step quickstart guide.
-</Card>
+**User onboarding** — Catalog helps developers onboard users regardless of their experience with crypto-based systems. This means libraries to authenticate them, help them connect their existing wallets and provision self-custodial embedded wallets for them if they don't already have one.
 
-## Make it yours
+**Wallet infrastructure** — Developers can spin up user-centric wallets from the client or general-purpose wallets from their backend directly to provision and manage cross-chain wallets for any use case. Catalog surfaces both user-centric abstractions enabling you to authenticate users and generate wallets for them, as well as wallet-centric abstractions whereby you can create wallets with assigned authorization keys to control them.
 
-Design a docs site that looks great and empowers your users.
+## Engineering principles
 
-<Columns cols={2}>
-  <Card
-    title="Edit locally"
-    icon="pen-to-square"
-    href="/development"
-  >
-    Edit your docs locally and preview them in real time.
-  </Card>
-  <Card
-    title="Customize your site"
-    icon="palette"
-    href="/essentials/settings"
-  >
-    Customize the design and colors of your site to match your brand.
-  </Card>
-    <Card
-    title="Set up navigation"
-    icon="map"
-    href="/essentials/navigation"
-  >
-    Organize your docs to help users find what they need and succeed with your product.
-  </Card>
-  <Card
-    title="API documentation"
-    icon="terminal"
-    href="/api-reference/introduction"
-  >
-    Auto-generate API documentation from OpenAPI specifications.
-  </Card>
-</Columns>
+At Catalog, we believe technical decisions are moral decisions. Below are the principles that guide our engineering decisions.
 
-## Create beautiful pages
+### Secure
 
-Everything you need to create world-class documentation.
+Nothing is more important than your user's security. Catalog's key management system uses distributed key sharding to ensure Catalog can never access them and only their rightful owner can. Keys are only ever reconstituted in a secure execution environment at the point of signing a message or sending a transaction. Catalog regularly undergoes rigorous audits to ensure your users control and privacy over their wallets.
 
-<Columns cols={2}>
-  <Card
-    title="Write with MDX"
-    icon="pen-fancy"
-    href="/essentials/markdown"
-  >
-    Use MDX to style your docs pages.
-  </Card>
-  <Card
-    title="Code samples"
-    icon="code"
-    href="/essentials/code"
-  >
-    Add sample code to demonstrate how to use your product.
-  </Card>
-  <Card
-    title="Images"
-    icon="image"
-    href="/essentials/images"
-  >
-    Display images and other media.
-  </Card>
-  <Card
-    title="Reusable snippets"
-    icon="recycle"
-    href="/essentials/reusable-snippets"
-  >
-    Write once and reuse across your docs.
-  </Card>
-</Columns>
+### Flexible
 
-## Need inspiration?
+Catalog gives your application low level access to users and their wallets to support a fully customized product experience. Your application can access Catalog's functionality all the way down to the API level, supporting unique wallet flows including provisioning multiple wallets per user.
 
-<Card
-  title="See complete examples"
-  icon="stars"
-  href="https://mintlify.com/customers"
->
-  Browse our showcase of exceptional documentation sites.
-</Card>
+### Easy to use
+
+Catalog has out of the box UIs so your app can support authentication and wallet flows in minutes. These UIs are highly customizable and can even be fully whitelabeled. This means access to out of the box funding methods, smart wallet creation pipelines, and more.
+
+### Portable
+
+Catalog is compatible with any chain your application operates on. Your application can provision embedded wallets (or link external wallets to a Catalog account) on Solana, Ethereum, and all EVM/SVM compatible chains. Catalog is at the bleeding edge of distributed systems so when you want to build on a new chain, that chain is already supported.
